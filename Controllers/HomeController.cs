@@ -8,11 +8,13 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet("/todos")]
     public IActionResult Todos()
     {
         return View();
     }
 
+    [HttpGet("/add")]
     public IActionResult AddTodo()
     {
         return View();
