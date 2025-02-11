@@ -5,10 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css">
 </head>
 
 <body>
+    <header>
+        <div class="header-container">
+            <h1>TodoList</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Startsida</a></li>
+                    <li><a href="#">Todos</a></li>
+                    <li><a href="#">Lägg till</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+    <footer>
 
+    </footer>
 </body>
 
 </html>
