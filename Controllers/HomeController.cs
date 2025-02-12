@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using dotnetTodo.Models;
+
 namespace dotnetTodo.Controllers;
 
 public class HomeController : Controller
@@ -8,15 +10,28 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpGet("/todos")]
     public IActionResult Todos()
     {
         return View();
     }
 
-    [HttpGet("/add")]
     public IActionResult AddTodo()
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult AddTodo(TodoModel model)
+    {
+        if (ModelState.IsValid)
+        {
+
+        }
+        else
+        {
+
+        }
+        return View();
+    }
+
 }
