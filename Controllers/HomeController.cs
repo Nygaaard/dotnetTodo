@@ -1,25 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
 using dotnetTodo.Models;
 using System.Text.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace dotnetTodo.Controllers;
 
-//Home Controller
 public class HomeController : Controller
 {
     public IActionResult Index()
     {
+        ViewBag.Message = "Välkommen till din Todo-applikation!";
         return View();
     }
 
     public IActionResult Todos()
     {
-        //Läs in todos
+        // Läs in todos
         string jsonStr = System.IO.File.ReadAllText("todos.json");
-        //Deserialisera JSON
+        // Deserialisera JSON
         var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr);
 
-        //Returnera vy
+        // Lagra todos i session
+        HttpContext.Session.SetString("Todos", jsonStr);
+
+        // Returnera vy
         return View(todos);
     }
 
@@ -28,60 +32,59 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost] //Controller för post-anrop
+    [HttpPost]
     public IActionResult AddTodo(TodoModel model)
     {
         if (ModelState.IsValid)
         {
-            //Läs in todos
-            string jsonStr = System.IO.File.ReadAllText("todos.json");
-            //Deserialisera JSON
-            var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr);
+            // Läs in todos från session
+            string jsonStr = HttpContext.Session.GetString("Todos") ?? "[]";
+            var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr) ?? new List<TodoModel>();
 
-            //Lägg till todo
-            if (todos != null)
-            {
-                todos.Add(model);
+            // Lägg till todo
+            todos.Add(model);
 
-                //Serialisera JSON
-                jsonStr = JsonSerializer.Serialize(todos);
-                //Ändra i todos.json
-                System.IO.File.WriteAllText("todos.json", jsonStr);
-            }
-            //Rensa formulär
+            // Serialisera JSON
+            jsonStr = JsonSerializer.Serialize(todos);
+            // Ändra i todos.json
+            System.IO.File.WriteAllText("todos.json", jsonStr);
+            // Uppdatera session
+            HttpContext.Session.SetString("Todos", jsonStr);
+
+            // Rensa formulär
             ModelState.Clear();
 
-            //Redirect till todos
+            // Redirect till todos
             return RedirectToAction("Todos", "Home");
         }
         return View();
     }
 
+
     [HttpPost]
-    public IActionResult UpdateStatus(string Title, string Description, string Status)
+    public IActionResult UpdateStatus(string title, string description, string status)
     {
-        //Läs in todos
-        string jsonStr = System.IO.File.ReadAllText("todos.json");
-        //Deserialisera JSON
-        var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr);
+        // Läs in todos från session
+        string jsonStr = HttpContext.Session.GetString("Todos") ?? "[]";
+        var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr) ?? new List<TodoModel>();
 
-        //Uppdatera todo status
-        if (todos != null)
+        // Uppdatera todo status
+        var todoToUpdate = todos.FirstOrDefault(t => t.Title == title && t.Description == description);
+        if (todoToUpdate != null)
         {
-            var todoToUpdate = todos.FirstOrDefault(t => t.Title == Title && t.Description == Description);
-            if (todoToUpdate != null)
-            {
-                todoToUpdate.Status = Status;
+            todoToUpdate.Status = status;
 
-                //Serialisera JSON
-                jsonStr = JsonSerializer.Serialize(todos);
-                //Ändra i todos.json
-                System.IO.File.WriteAllText("todos.json", jsonStr);
-            }
+            // Serialisera JSON
+            jsonStr = JsonSerializer.Serialize(todos);
+            // Ändra i todos.json
+            System.IO.File.WriteAllText("todos.json", jsonStr);
+            // Uppdatera session
+            HttpContext.Session.SetString("Todos", jsonStr);
         }
 
-        //Redirect till todos
+        // Redirect till todos
         return RedirectToAction("Todos");
     }
+
 
 }

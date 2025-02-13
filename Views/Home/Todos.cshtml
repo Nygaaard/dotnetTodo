@@ -19,8 +19,10 @@
                     @todo.Status
                 </span>
 
-                <form method="post" asp-action="UpdateStatus" class="status-form">
-                    <select asp-for="@todo.Status" name="Status" class="status-select">
+                <form method="post" asp-action="UpdateStatus" asp-controller="Home" class="status-form">
+                    <input type="hidden" name="title" value="@todo.Title" />
+                    <input type="hidden" name="description" value="@todo.Description" />
+                    <select name="status" class="status-select">
                         <option value="Ej påbörjad" selected="@(todo.Status == "Ej påbörjad")">Ej påbörjad</option>
                         <option value="Påbörjad" selected="@(todo.Status == "Påbörjad")">Påbörjad</option>
                         <option value="Avklarad" selected="@(todo.Status == "Avklarad")">Avklarad</option>

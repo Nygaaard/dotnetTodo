@@ -369,4 +369,4 @@ C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\obj\Debug\net9.0\do
 C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\obj\Debug\net9.0\dotnetTodo.genruntimeconfig.cache
 C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\obj\Debug\net9.0\ref\dotnetTodo.dll
 C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\bin\Debug\net9.0\todos.json
-C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\obj\Debug\net9.0\compressed\x899zokwwa-1yhhszln9x.gz
+C:\Users\nygar\OneDrive\Skrivbord\Dotnet\Moment 2\dotnetTodo\obj\Debug\net9.0\compressed\x899zokwwa-bioap7anfi.gz
