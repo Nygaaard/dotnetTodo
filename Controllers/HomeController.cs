@@ -56,4 +56,32 @@ public class HomeController : Controller
         }
         return View();
     }
+
+    [HttpPost]
+    public IActionResult UpdateStatus(string Title, string Description, string Status)
+    {
+        //Läs in todos
+        string jsonStr = System.IO.File.ReadAllText("todos.json");
+        //Deserialisera JSON
+        var todos = JsonSerializer.Deserialize<List<TodoModel>>(jsonStr);
+
+        //Uppdatera todo status
+        if (todos != null)
+        {
+            var todoToUpdate = todos.FirstOrDefault(t => t.Title == Title && t.Description == Description);
+            if (todoToUpdate != null)
+            {
+                todoToUpdate.Status = Status;
+
+                //Serialisera JSON
+                jsonStr = JsonSerializer.Serialize(todos);
+                //Ändra i todos.json
+                System.IO.File.WriteAllText("todos.json", jsonStr);
+            }
+        }
+
+        //Redirect till todos
+        return RedirectToAction("Todos");
+    }
+
 }

@@ -1,5 +1,33 @@
+@model List<dotnetTodo.Models.TodoModel>
+
 @{
-    ViewData["Title"] = "Todos"; //Titel
+    ViewData["Title"] = "Todos";
 }
 
-<h2>Alla Todos</h2>
+<h2 class="title">Alla Todos</h2>
+
+<div class="todo-container">
+    @foreach (var todo in Model)
+    {
+        <div class="todo-card">
+            <h3>@todo.Title</h3>
+            <p>@todo.Description</p>
+
+            <div class="status-container">
+                <span
+                    class="status-label @(todo.Status == "Ej påbörjad" ? "not-started" : todo.Status == "Påbörjad" ? "in-progress" : "completed")">
+                    @todo.Status
+                </span>
+
+                <form method="post" asp-action="UpdateStatus" class="status-form">
+                    <select asp-for="@todo.Status" name="Status" class="status-select">
+                        <option value="Ej påbörjad" selected="@(todo.Status == "Ej påbörjad")">Ej påbörjad</option>
+                        <option value="Påbörjad" selected="@(todo.Status == "Påbörjad")">Påbörjad</option>
+                        <option value="Avklarad" selected="@(todo.Status == "Avklarad")">Avklarad</option>
+                    </select>
+                    <button type="submit" class="update-btn">Uppdatera</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>

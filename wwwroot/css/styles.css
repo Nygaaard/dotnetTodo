@@ -1,3 +1,133 @@
-h2 {
-    color: red;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.quote-container {
+    font-style: italic;
+    color: #888;
+    border-left: 4px solid #ddd;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.todo-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.status-label {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.not-started {
+    background-color: #ffcccc;
+    color: #a10000;
+}
+
+.in-progress {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.status-select {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.update-btn:hover {
+    background: #0056b3;
+}
+
+.todo-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form .form-group {
+    margin-bottom: 15px;
+}
+
+.todo-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.todo-form .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.todo-form .text-danger {
+    color: #a10000;
+    font-size: 0.9em;
+}
+
+.todo-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }
