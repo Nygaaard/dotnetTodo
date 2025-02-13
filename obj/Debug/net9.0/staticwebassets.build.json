@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AG7pccJelp5y2H9tTO+vehcrSedGl5iu8xgpJe8wzKM=",
+  "Hash": "J6QE2Drpy2cC8aBwUS8NYU1I4Wswup3WKqTmEHQGG/c=",
   "Source": "dotnetTodo",
   "BasePath": "_content/dotnetTodo",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-lbumliknsd.gz",
+      "Identity": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-1yhhszln9x.gz",
       "SourceId": "dotnetTodo",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/dotnetTodo",
-      "RelativePath": "css/styles#[.{fingerprint=lbumliknsd}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=1yhhszln9x}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\wwwroot\\css\\styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "32mnou7ivx",
-      "Integrity": "lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg=",
+      "Fingerprint": "usn0fmh0bf",
+      "Integrity": "gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\wwwroot\\css\\styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lbumliknsd",
-      "Integrity": "AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI=",
+      "Fingerprint": "1yhhszln9x",
+      "Integrity": "GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
@@ -61,13 +61,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-lbumliknsd.gz",
+      "Route": "css/styles.1yhhszln9x.css",
+      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-1yhhszln9x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001930501931"
+          "Quality": "0.001392757660"
         }
       ],
       "ResponseHeaders": [
@@ -77,19 +77,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "517"
+          "Value": "717"
         },
         {
           "Name": "ETag",
-          "Value": "\"lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg=\""
+          "Value": "\"gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -105,18 +105,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI=\""
+          "Value": "W/\"GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "1yhhszln9x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI="
+          "Value": "sha256-GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM="
         }
       ]
     },
     {
-      "Route": "css/styles.css",
+      "Route": "css/styles.1yhhszln9x.css",
       "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -126,7 +134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1288"
+          "Value": "2308"
         },
         {
           "Name": "Content-Type",
@@ -134,121 +142,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI=\""
+          "Value": "\"GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css.gz",
-      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-lbumliknsd.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.lbumliknsd.css",
-      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-lbumliknsd.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001930501931"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lbumliknsd"
+          "Value": "1yhhszln9x"
         },
         {
           "Name": "label",
@@ -256,13 +164,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI="
+          "Value": "sha256-GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM="
         }
       ]
     },
     {
-      "Route": "css/styles.lbumliknsd.css",
-      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\wwwroot\\css\\styles.css",
+      "Route": "css/styles.1yhhszln9x.css.gz",
+      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-1yhhszln9x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -271,7 +179,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1288"
+          "Value": "717"
         },
         {
           "Name": "Content-Type",
@@ -279,56 +187,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI=\""
+          "Value": "\"gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lbumliknsd"
-        },
-        {
-          "Name": "label",
-          "Value": "css/styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AQCv2gBEIT8Vqw3sjqktCcl7cc950Wg9yT8t3Hz7nEI="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.lbumliknsd.css.gz",
-      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-lbumliknsd.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 09:00:05 GMT"
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -346,7 +209,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lbumliknsd"
+          "Value": "1yhhszln9x"
         },
         {
           "Name": "label",
@@ -354,7 +217,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lfBb9uQoxruVM0HOBu99T3/0V442vRxXBTk89MMW6Sg="
+          "Value": "sha256-gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-1yhhszln9x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001392757660"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "717"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GY1/1i6Uzx1OI3axaErqGBXiXovGX2ArLrqjmU9tBWM="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "C:\\Users\\nygar\\OneDrive\\Skrivbord\\Dotnet\\Moment 2\\dotnetTodo\\obj\\Debug\\net9.0\\compressed\\x899zokwwa-1yhhszln9x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "717"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 09:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gvBNV0XDjBf8/IVVzEey8TBsEcAMoSDuKzJwK/+WKxc="
         }
       ]
     }
