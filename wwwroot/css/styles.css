@@ -1,20 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1200px;
+    color: #333;
 }
 
 .header-container {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .header-container h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 .header-container nav ul {
@@ -23,7 +25,7 @@ body {
     margin: 20px 0 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .header-container nav ul li {
@@ -35,86 +37,81 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 .header-container nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffdd57;
 }
 
 .footer-container {
-    background-color: #343a40;
+    background-color: #222;
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
-.footer-container nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-container nav ul li {
-    display: inline;
-}
-
-.footer-container nav ul li a {
-    color: #fff;
+.footer-container a {
+    color: #ffdd57;
     text-decoration: none;
-    font-size: 1em;
+    font-weight: bold;
 }
 
-.footer-container nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-container p {
-    margin: 0;
+.list {
+    list-style: none;
 }
 
 .title {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
 .intro {
     font-size: 1.2em;
-    color: #666;
+    color: #555;
+    text-align: center;
     margin-bottom: 40px;
 }
 
 .quote-container {
     font-style: italic;
-    color: #888;
-    border-left: 4px solid #ddd;
-    padding-left: 10px;
-    margin-bottom: 30px;
+    color: #555;
+    background: #fff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .todo-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
 .todo-card {
     background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.2s;
+}
+
+.todo-card:hover {
+    transform: scale(1.03);
 }
 
 .status-label {
     display: inline-block;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
     font-size: 1em;
     font-weight: bold;
 }
@@ -142,7 +139,7 @@ body {
 }
 
 .status-select {
-    padding: 0.4rem;
+    padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -151,9 +148,11 @@ body {
     background: #007bff;
     color: white;
     border: none;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
 .update-btn:hover {
@@ -162,15 +161,15 @@ body {
 
 .todo-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 2rem;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .todo-form .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .todo-form label {
@@ -181,24 +180,23 @@ body {
 
 .todo-form .form-control {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.6rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-}
-
-.todo-form .text-danger {
-    color: #a10000;
-    font-size: 0.9em;
+    border-radius: 6px;
 }
 
 .todo-form .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
     color: #fff;
-    padding: 0.7rem 1.5rem;
-    font-size: 1em;
-    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1em;
+    border-radius: 6px;
     cursor: pointer;
     width: 100%;
+    transition: background 0.3s;
+}
+
+.todo-form .btn-primary:hover {
+    background: #0056b3;
 }
