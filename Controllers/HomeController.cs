@@ -9,7 +9,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        ViewBag.Message = "Välkommen till din Todo-applikation!";
+        ViewBag.Message = "Välkommen till Todo-applikationen!";
         return View();
     }
 
